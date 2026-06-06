@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Share+Tech&display=swap');
+html, body {
+    margin: 0;
+    padding: 0;
+}
+html{
+  background-image: linear-gradient(to bottom, rgb(205, 152, 195), rgb(0, 0, 0));
+  color: white;
+  min-height: 100vh;
+}
+body{
+    font-family: "Share Tech", sans-serif;
+}
+header {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    background-image: url("../images/Stars.jpg");
+    height: 200px;
+    margin-bottom: 0;
+}
+header > h1 {
+    color: white;
+    font-size: 4em;
+}
+.header-separator{
+    margin: 0;
+    width: 100vw;
+}
+nav {
+    margin-top: -1.5em;
+    border: 1px solid transparent;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+nav > ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    /* margin: ; */
+    & li a {
+        border: 3px solid gray;
+        text-decoration: none;
+        background-image: radial-gradient(circle, white 0%, gray 100%);
+        border-radius: 15px;
+        padding: 1em 3em;
+        background-color: rgb(255, 255, 255);
+    }
+    & li a:active{
+        box-shadow: inset 3px 3px 10px black;
+    }
+    & li a:hover{
+        background-image: radial-gradient(circle, rgba(216, 231, 56, 0.362) 100%, white 100%);
+    }
+    
+}
+h2 {
+    font-size: 250%;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 0px 2fr;
+
+}
+#about {
+    line-height: 20px;
+    padding: 15px 20px;
+    display: flex;
+    flex-flow: column;
+    align-content: flex-start;
+    align-items: center;
+}
+#about-info {
+    display: flex;
+    flex-flow: column;
+    line-height: 2rem;
+    text-align: justify;
+    gap: 35px;
+    padding: 5px;
+}
+#about-info :first-child {
+    margin-top: 25%;
+}
+#projects, #parent-cards, .project-links {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+#projects {
+    /* border: 1px solid wheat; */
+    padding: 0 0;
+    height: 1300px
+}
+#parent-cards {
+    margin: 10%;
+    padding-top: 0;
+    gap: 3em;
+}
+.project-links{
+    color: white;
+    text-decoration: none;
+    font-family: "EB Garamond", serif;
+    border-radius: 10px;
+    background: firebrick;
+    box-shadow: 5px 5px 10px black;
+    /* -3px -3px 10px rgba(255, 255, 255); */
+    max-width: 370px;
+    border: 1px solid white;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+.project-links:hover{
+    transform: translateY(-10px); 
+    background-image: radial-gradient(circle, rgb(242, 247, 194) 100%, white 100%);
+    color: black;
+}
+.project-links:active{
+    transform: translateY(-10px); 
+}
+section > h3 {
+    font-size: 150%;
+}
+.project-desc {
+    margin: -10px auto 20px;
+    border: 1px solid transparent;
+    width: 90%;
+    text-align: center;
+}
+section > img {
+    border: 2px solid rgb(0 0 0 / 0.4);
+}
+img {
+    border-radius: 10px;
+}
+footer {
+    margin-left: 20px;
+}
+#home-link a {
+    --s: 175px;
+    display: grid;
+    border: 1px solid white;
+    width: calc(var(--s));
+    height: calc(var(--s) / 2);
+    place-items:center;
+    background-image: radial-gradient(circle, white 0%, gray 100%);
+    border: 3px solid gray;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 2rem;
+    margin-top: -65px;
+}
+#home-link a:active{
+    box-shadow: inset 3px 3px 10px black;
+}
+#home-link a:hover{
+    background-image: radial-gradient(circle, rgb(242, 247, 194) 100%, white 100%);
+}
+#contact-body{
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    overflow:auto;
+}
+#contact-body footer {
+    margin-top: auto;
+    align-self: flex-start;
+}
+#contact-header{
+    width: 100dvw;
+}
+table, th, td {
+    border: 1px solid white;
+}
+table {
+    margin-top: 40px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 30px;
+    overflow: hidden;
+    font-style: normal;
+    text-align: center;
+}
+th, td {
+    padding: 1em 2em;
+}
+thead{
+    background-color: rgba(134, 195, 230, 0.895);
+}
+thead th, td {
+    color: white;
+}
+tbody, tfoot{
+    color: black;
+    background-color: rgb(207, 204, 204);
+}
+th {
+    color: black;
+}
+#contact-line{
+    border: none;
+    border-top: 2px solid white;
+    margin: 0;
+    color:white;
+    width: 90vw;
+
+}
